@@ -6,6 +6,7 @@ const bcrypt=require('bcryptjs');
 const jwt=require('jsonwebtoken');
 const TOKEN_KEY = "2AouR3eCDQTIR0FU2eMezf3OpWvEt88z";
 
+//api za registraciju
 router.post("/register", async (req, res) => {    
     try {
       const { username, email, password, is_admin } = req.body;
